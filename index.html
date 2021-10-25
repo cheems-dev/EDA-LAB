@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="/scripts/quadtree.js"></script>
+    <script src="/scripts/sketch.js"></script>
+    <title>Quadtree</title>
+</head>
+
+<body>
+    <nav class="bg-white shadow dark:bg-gray-800">
+        <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+            <div>
+                <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">Visualizador</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w-full max-h-screen pt-20">
+        <div class="grid grid-cols-2 gap-4">
+            <!-- primero container -->
+            <div class="flex justify-center">
+                <div id="box"></div>
+            </div>
+            <!-- segundo container -->
+            <div class="grid grid-cols-1 py-8">
+
+                <div>
+                    <p class="dark:text-coolGray-100 py-2 xl">
+                        Cantidad de puntos, al momento de usar click derecho con el mouse
+                    </p>
+                    <div class="px-14">
+                        <div id="slider_one"></div>
+                    </div>
+                    <div>
+                        <button class="bg-yellow-300 font-semibold text-white p-4 w-60  hover:bg-yellow-400 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 m-2" onclick="RandomPoints()"> Aleatorio</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="bg-red-300 font-semibold text-white p-4 w-60 hover:bg-red-400 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 m-2" onclick="ClearButton()">
+                        Limpiar
+                    </button>
+                </div>
+
+                <div>
+                    <p class="dark:text-coolGray-100 py-2 xl">
+                        Tamaño del cuadro contador:
+                    </p>
+                    <div class="px-14">
+                        <div id="slider_two"></div>
+                    </div>
+                    <button class="bg-blue-400 font-semibold text-white p-4 w-60 hover:bg-blue-700 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 m-2" id="count" onclick="CountInRange()">Contador</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

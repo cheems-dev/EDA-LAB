@@ -1,0 +1,17 @@
+{
+  "name": "quadtree",
+  "version": "1.0.0",
+  "description": "Implementacion basica de quadtree en Javascript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "node",
+    "docker",
+    "javascript"
+  ],
+  "author": "Selene Barrios Cornejo, Luis Ccalluchi Lopez",
+  "license": "MIT"
+}
